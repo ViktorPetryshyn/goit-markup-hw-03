@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="stylesheet" href="/goit-markup-hw-01/css/style.css" />
-  </head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+     href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
+     rel="stylesheet"
+    />
   <body>
-    <header class="top">
+    <header class="topline">
       <!-- Панель навигации -->
 
       <nav class="panel-nav">
-        <a href="/">
+        <a class="logo" href="/">
           <span class="web">Web</span><span class="studio">Studio</span>
         </a>
         <ul class="nav-item">
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
+          <li><a href="/index.html">Студия</a></li>
+          <li><a href="/portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
@@ -32,25 +35,27 @@
     </header>
 
     <main>
-      <ul class="port-nav">
+      <ul class="filter">
+        <h1>Фильтр</h1>
         <li>
-          <button type="button" class="button">Все</button>
+          <button type="button" class="button-f">Все</button>
         </li>
         <li>
-          <button type="button" class="button">Веб-сайты</button>
+          <button type="button" class="button-f">Веб-сайты</button>
         </li>
         <li>
-          <button type="button" class="button">Приложения</button>
+          <button type="button" class="button-f">Приложения</button>
         </li>
         <li>
-          <button type="button" class="button">Дизайн</button>
+          <button type="button" class="button-f">Дизайн</button>
         </li>
         <li>
-          <button type="button" class="button">Маркетинг</button>
+          <button type="button" class="button-f">Маркетинг</button>
         </li>
       </ul>
       <ul class="our-project">
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/laptop.jpg"
             alt="Картинка ноутбук"
@@ -60,11 +65,13 @@
             top="262"
           />
           <div>
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="name-project">Технокряк</h2>
+            <p class="product">Веб-сайт</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/poster.jpg"
             alt="Картинка баскетбольный постер"
@@ -74,11 +81,13 @@
             top="262"
           />
           <div>
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <h2 class="name-project">Постер New Orlean vs Golden Star</h2>
+            <p class="product">Дизайн</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/seafoodlogo.jpg"
             alt="Картинга логотипа ресто"
@@ -88,11 +97,13 @@
             top="262"
           />
           <div>
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
+            <h2 class="name-project">Ресторан Seafood</h2>
+            <p class="product">Приложение</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/headphone.jpg"
             alt="Картинка наушники"
@@ -102,11 +113,13 @@
             top="262"
           />
           <div>
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
+            <h2 class="name-project">Проект Prime</h2>
+            <p class="product">Маркетинг</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/projectboxes.jpg"
             alt="Картинка коробки"
@@ -117,11 +130,13 @@
             top="262"
           />
           <div>
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
+            <h2 class="name-project">Проект Boxes</h2>
+            <p class="product">Приложение</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/monoblock.jpg "
             alt="Картинка моноблок"
@@ -132,11 +147,13 @@
             top="262"
           />
           <div>
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="name-project">Inspiration has no Borders</h2>
+            <p class="product">Веб-сайт</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/magazines.jpg"
             alt="Картинка журнала"
@@ -147,11 +164,13 @@
             top="262"
           />
           <div>
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
+            <h2 class="name-project">Издание Limited Edition</h2>
+            <p class="product">Дизайн</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/projectlab.jpg"
             alt="Картинка бирки LAB"
@@ -162,11 +181,13 @@
             top="262"
           />
           <div>
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="name-project">Проект LAB</h2>
+            <p class="product">Маркетинг</p>
           </div>
+          </a>
         </li>
         <li>
+          <a class="link-project" href="">
           <img
             src="/img/laptop2.jpg"
             alt="Картинка работы за ноутбуком"
@@ -177,32 +198,32 @@
             top="262"
           />
           <div>
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
+            <h2 class="name-project">Growing Business</h2>
+            <p class="product">Приложение</p>
           </div>
+          </a>
         </li>
       </ul>
     </main>
 
     <footer>
       <div class="footer-sec">
-        <a href="/">
-          <span class="logo">Web</span><span class="studio">Studio</span>
+        <a class="logo" href="/">
+          <span class="web">Web</span><span class="studio-footer">Studio</span>
         </a>
 
         <!-- Как нас найти -->
-        <address>
-          <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
-          <ul class="connection-list">
-            <li class="conn-item">
-              <a href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="conn-item">
-              <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <address>г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="connection-list">
+          <li class="conn-item">
+            <a href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="conn-item">
+            <a href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </footer>
+  </body>
   </body>
 </html>

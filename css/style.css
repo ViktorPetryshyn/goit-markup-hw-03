@@ -1,10 +1,21 @@
-body {
-  background-color: #e5e5e5;
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+:root {
+  --basic-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accented-text-color: #2196f3;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  letter-spacing: 0.03em;
+}
 /* Панель навигации  */
+header {
+  background-color: #ffffff;
+}
+ul {
+  list-style: none;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -16,46 +27,32 @@ body {
   text-decoration: none;
 }
 .web {
-  color: #2196f3;
-}
-.studio {
-  color: #212121;
+  color: var(--accented-text-color);
 }
 .nav-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 .nav-item a {
   text-decoration: none;
 }
-.nav-item a:hover {
-  color: #2196f3;
-  text-decoration: underline;
-}
+.nav-item a:hover,
 .nav-item a:focus {
-  color: #2196f3;
-  text-decoration: underline;
+  color: var(--accented-text-color);
 }
-.nav-contact {
+.nav-contact a {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
-.nav-contact a {
-  text-decoration: none;
-}
-.nav-contact a:hover {
-  color: #2196f3;
-  text-decoration: underline;
-}
+.nav-contact a:hover,
 .nav-contact a:focus {
-  color: #2196f3;
-  text-decoration: underline;
+  color: var(--accented-text-color);
 }
 .basic-theme {
   background-color: #2f303a;
@@ -77,6 +74,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+button:hover {
+  background-color: var(--accented-text-color);
+  color: #ffffff;
+}
+button:focus {
+  background-color: var(--accented-text-color);
   color: #ffffff;
 }
 .pec-head {
@@ -85,7 +89,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .pec-parag {
   font-weight: 400;
@@ -100,7 +103,9 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+}
+.link-project {
+  text-decoration: none;
 }
 .team-title {
   font-weight: 700;
@@ -108,7 +113,6 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .name {
   font-weight: 500;
@@ -116,7 +120,6 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .position {
   font-weight: 400;
@@ -124,5 +127,58 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
+}
+footer {
+  width: 1600;
+  height: 252;
+  left: 0;
+  top: 2097;
+  background: #2f303a;
+}
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.conn-item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.conn-item a:focus,
+.conn-item a:hover {
+  color: var(--accented-text-color);
+}
+
+.button-f {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-text-color);
+}
+.name-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--basic-text-color);
+}
+.product {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.studio-footer {
+  color: #ffffff;
 }
