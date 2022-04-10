@@ -3,13 +3,13 @@
   --secondary-text-color: #757575;
   --accented-text-color: #2196f3;
 }
-
 body {
   font-family: Roboto, sans-serif;
   color: #212121;
   letter-spacing: 0.03em;
 }
-/* Панель навигации  */
+
+/* navigation sec  */
 header {
   background-color: #ffffff;
 }
@@ -29,6 +29,9 @@ ul {
 .web {
   color: var(--accented-text-color);
 }
+.panel-nav .link.current {
+  color: var(--accented-text-color);
+}
 .nav-item {
   font-weight: 500;
   font-size: 14px;
@@ -37,6 +40,9 @@ ul {
 }
 .nav-item a {
   text-decoration: none;
+}
+.nav-item a.current {
+  color: var(--accented-text-color);
 }
 .nav-item a:hover,
 .nav-item a:focus {
@@ -54,10 +60,11 @@ ul {
 .nav-contact a:focus {
   color: var(--accented-text-color);
 }
+/* hero */
 .basic-theme {
   background-color: #2f303a;
 }
-.eff-for-buss {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -66,6 +73,7 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
 }
+/* all button */
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -75,14 +83,21 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
-button:hover {
-  background-color: var(--accented-text-color);
-  color: #ffffff;
-}
+button:hover,
 button:focus {
   background-color: var(--accented-text-color);
   color: #ffffff;
 }
+.button-port {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--basic-text-color);
+}
+/* peculiarities */
 .pec-head {
   font-weight: 700;
   font-size: 14px;
@@ -97,6 +112,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: #757575;
 }
+/* what we do */
 .wwd-title {
   font-weight: 700;
   font-size: 36px;
@@ -104,8 +120,9 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.link-project {
-  text-decoration: none;
+/* team */
+.team {
+  background-color: #f5f4fa;
 }
 .team-title {
   font-weight: 700;
@@ -129,11 +146,10 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+/* footer sec */
 footer {
   width: 1600;
   height: 252;
-  left: 0;
-  top: 2097;
   background: #2f303a;
 }
 address {
@@ -156,15 +172,7 @@ address {
 .conn-item a:hover {
   color: var(--accented-text-color);
 }
-
-.button-f {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--basic-text-color);
-}
+/* our project */
 .name-project {
   font-weight: 700;
   font-size: 18px;
@@ -178,6 +186,9 @@ address {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.link-project {
+  text-decoration: none;
 }
 .studio-footer {
   color: #ffffff;
