@@ -9,13 +9,15 @@ body {
   letter-spacing: 0.03em;
 }
 .section {
-  padding: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: auto 15;
-  background-color: tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* background-color: tomato; */
 }
 h1,
 h2,
@@ -24,7 +26,8 @@ p {
   margin-bottom: 0;
   margin-top: 0;
 }
-ul {
+ul,
+li {
   padding: 0;
   margin: 0;
 }
@@ -140,17 +143,25 @@ ul {
 }
 button:hover,
 button:focus {
-  background-color: var(--accented-text-color);
   color: #ffffff;
+  background-color: var(--accented-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .button-port {
-  background-color: #f5f4fa;
+  width: 128px;
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: #f5f4fa;
   color: var(--basic-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   cursor: pointer;
 }
 /* peculiarities */
@@ -178,6 +189,9 @@ button:focus {
   color: #757575;
 }
 /* what we do */
+.section.wwd {
+  padding-top: 0;
+}
 .wwd-list {
   display: flex;
   justify-content: space-between;
@@ -230,7 +244,37 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+/* portfolio-sec */
+.filter {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* our project */
+.our-project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  width: calc((100% - 60px) / 3);
+  height: 404px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  /* border: 1px solid #eeeeee; */
+}
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item::nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.project-info {
+  margin: 20px 24px;
+}
 .name-project {
   font-weight: 700;
   font-size: 18px;
@@ -256,9 +300,6 @@ footer {
   height: 252px;
   background: #2f303a;
 }
-/* .footer-sec {
-  padding-top: 50px;
-} */
 .footer-sec > .logo {
   display: inline-block;
   margin-top: 50px;
