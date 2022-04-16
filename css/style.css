@@ -345,7 +345,7 @@ address {
 .connection-list {
   margin-top: 9px;
 }
-.conn-tel {
+.conn-item.fone {
   margin-top: 9px;
 }
 .conn-item a {
